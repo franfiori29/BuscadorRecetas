@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script src="main.js"></script>
+  <script>
+    var proxyUrl = "https://cors-anywhere.herokuapp.com/",
+      targetUrl = "https://api.edamam.com/search?q=chicken";
+
+    fetch(targetUrl, {
+      method: "GET",
+      headers: {
+        app_id: "468b6262",
+        app_key: "07d4eaa4c84fba51c3307830dcfbef89",
+      },
+    })
+      .then((blob) => blob.json())
+      .then((data) => console.log(data));
+  </script>
+</html>
