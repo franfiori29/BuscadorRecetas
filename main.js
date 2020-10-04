@@ -24,7 +24,6 @@ const getRecipes = () => {
     url: URL,
     success: function (result) {
       result.hits.forEach((receta) => {
-        console.log(receta);
         receta.recipe.ingredientLines.forEach((linea) => {
           let cont = 0;
           let lineaHtml = "";
