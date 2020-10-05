@@ -14,14 +14,21 @@
   </head>
   <body>
     <h1>Buscador de recetas:</h1>
-    <label for="ingPrincipal">Ingrediente principal: </label>
-    <input type="text" name="ingPrincipal" id="ingPrincipal" /><br />
-    <label for="dos">Ingrediente extra: </label>
-    <input type="text" name="dos" id="dos" class="extra" /><br />
-    <label for="tres">Ingrediente extra: </label>
-    <input type="text" name="tres" id="tres" class="extra" /><br />
-    <label for="cuatro">Ingrediente extra: </label>
-    <input type="text" name="cuatro" id="cuatro" class="extra" /><br />
+    <div id="divInputs">
+      <div>
+        Ingrediente principal:
+        <input type="text" id="ingPrincipal" /><br />
+      </div>
+      <div>
+        Ingrediente extra:
+        <input type="text" class="extra" /><br />
+      </div>
+      <div>
+        Ingrediente extra:
+        <input type="text" class="extra" /><br />
+      </div>
+    </div>
+    <button id="agregarExtra">Agregar ingrediente</button>
     <br />
     <button id="enviar">Buscar</button>
 
